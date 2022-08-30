@@ -1,0 +1,104 @@
+.team{
+    background-color: #F5F4FA;
+   
+}
+.team-title{
+    font-size: 36px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+    color:var(--main-color-text);
+    margin-bottom: 50px;
+    text-align: center;
+}
+.team-item-title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+    letter-spacing: 0.03em;
+    color: var(--main-color-text);
+    text-align: center;
+    margin-bottom: 10px;
+}
+.team-item-text {
+    font-size: 16px;
+    line-height: 1.18;
+    letter-spacing: 0.03em;
+    color: #757575;
+    text-align: center;
+    
+    }
+
+    .team-list{
+        display: flex;
+        gap: 30px;
+    }
+
+    .team-item{
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+        border-radius: 0px 0px 4px 4px;
+        background-color: #fff;
+    }
+
+
+   .person{
+    padding-top: 30px;
+    padding-bottom: 30px;
+   }
+  
+   .team-soc{
+    width: 20px;
+    height: 20px;
+    fill: #AFB1B8;
+    margin: 12px;
+    transition-duration: border-radius 250ms, background-color 250ms;
+    transition-timing-function: border-radius cubic-bezier(0.4, 0, 0.2, 1), background-color cubic-bezier(0.4, 0, 0.2, 1);
+   }
+
+  .team-soc-list{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 16px;
+  }
+
+  .team-soc-item{
+    width: 44px;
+    height: 44px;
+    border: 3px  #000000;
+    transition-property: border-radius,background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .team-soc-link{
+    transition-property: border-radius, background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .team-soc-link:hover{
+    border-radius: 50%;
+    background-color: #2196F3;
+  }
+
+  .team-soc-item:hover .team-soc{
+    fill: #fff;
+  }
+
+  .team-soc-link:focus .team-soc{
+    fill: #fff;
+  }
+
+  .team-soc-link:focus  {
+    border-radius: 50%;
+    background-color: #2196F3;
+  }
+
+  .team-soc-link{
+    width: 44px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
