@@ -38,12 +38,13 @@
             transition-duration: 250ms;
             transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
             cursor: pointer;
+            &:hover{
+            fill:  #2196F3;
+        }
         }
     
        
-        .mod-close-btn:hover{
-            fill:  #2196F3;
-        }
+        
     
         .is-hidden{
             opacity: 0;
@@ -60,15 +61,16 @@
             transition-property:  border-color,  outline-color ;
             transition-duration: 250ms;
             transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-        }
-    
-        .input-mod:hover{
+            &:hover{
             border-color: #2196F3;
         }
     
-        .input-mod:focus{
+        &:focus{
             outline-color: #2196F3;
         }
+        }
+    
+        
     
         .input-mod:hover + .icon-person{
             fill: #2196F3;
@@ -112,15 +114,16 @@
             transition-property:  border-color,  outline-color ;
             transition-duration: 250ms;
             transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-        }
-    
-        .comment:hover{
+            &:hover{
             border-color: #2196F3;
         }
     
-        .comment:focus{
+        &:focus{
             outline-color: #2196F3;
         }
+        }
+    
+        
     
         .comment::placeholder{
             font-family: 'Roboto';
@@ -186,11 +189,12 @@
             transition-property:background-color ;
             transition-duration: 250ms;
             transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-        }
-    
-        .modal-submit-btn:hover{
+            &:hover{
             background-color: #188CE8;
         }
+        }
+    
+        
     
         .icon-check{
             margin-right: 8px;

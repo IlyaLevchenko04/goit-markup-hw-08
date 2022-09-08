@@ -86,17 +86,21 @@ address{
     transition-property: background-color, border-radius ;
     transition-duration:  250ms;
     transition-timing-function:  cubic-bezier(0.4, 0, 0.2, 1) ;
+   
+    &:hover{
+        background-color: #2196F3;
+        border-radius: 50%;
+    }
+
+    &:focus{
+        background-color: #2196F3;
+        border-radius: 50%;
+    }
 }
 
-.footer-soc-link:hover{
-    background-color: #2196F3;
-    border-radius: 50%;
-}
 
-.footer-soc-link:focus{
-    background-color: #2196F3;
-    border-radius: 50%;
-}
+
+
 
 .footer-soc-link{
     display: flex;
@@ -134,6 +138,14 @@ address{
     transition-property: border-color, outline-color;
     transition-duration:  250ms;
     transition-timing-function:  cubic-bezier(0.4, 0, 0.2, 1) ;
+    &:hover{
+    border-color: #2196F3;
+}
+
+&:focus{
+    outline-color: #2196F3;
+    border-color: #2196F3;
+}
 }
 
 .footer-submit-btn{
@@ -151,11 +163,12 @@ address{
     transition-property: background-color;
     transition-duration:  250ms;
     transition-timing-function:  cubic-bezier(0.4, 0, 0.2, 1) ;
-}
-
-.footer-submit-btn:hover{
+    &:hover{
     background-color:#188CE8;
 }
+}
+
+
 
 .button-wrap{
     display: flex;
@@ -169,11 +182,3 @@ address{
     fill: #fff;
 }
 
-.footer-input:hover{
-    border-color: #2196F3;
-}
-
-.footer-input:focus{
-    outline-color: #2196F3;
-    border-color: #2196F3;
-}

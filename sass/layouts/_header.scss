@@ -21,7 +21,7 @@
     color: #000000;
     }
 
-.nav-link{
+.nav__link{
     font-weight: 500;
     font-size: 14px;
     line-height: 1.33;
@@ -33,11 +33,15 @@
     transition-property: color;
     transition-duration:   250ms;
     transition-timing-function:   cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover{
+        color: #2196F3;
+    }
+    &:focus{
+        color: #2196F3;
+    }
 }
 
-.nav-link:hover, .nav-link:focus{
-    color: #2196F3;
-}
+
 
 .tel{
     color: #757575;
@@ -55,14 +59,12 @@
 
 .nav-list{
     display: flex;
-    
+     gap: 50px;
 }
 
-.nav-list{
-    gap: 50px;
-}
 
-.header-tel{
+
+.header__tel{
     display: flex;
     gap:50px;
     margin-left: auto;
@@ -74,6 +76,12 @@
     transition-property: fill;
     transition-duration:  250ms;
     transition-timing-function:  cubic-bezier(0.4, 0, 0.2, 1);
+    .tel:hover &{
+    fill: #2196F3;
+}
+.tel:focus &{
+    fill: #2196F3;
+}
 }
 
 .phone{
@@ -82,29 +90,25 @@
     transition-property: fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    .tel:hover &{
+    fill: #2196F3;
+}
+.tel:focus &{
+    fill: #2196F3;
+}
 }
 
-.tel:hover .mail{
-    fill: #2196F3;
-}
-.tel:hover .phone{
-    fill: #2196F3;
-}
 
-.tel:focus .mail{
-    fill: #2196F3;
-}
 
-.tel:focus .phone{
-    fill: #2196F3;
-}
+
+
+
+
 
 .active{
     color: #000;
     position: relative;
-}
-
-.active::after{
+    &::after{
     content: '';
     background: #2196F3;
     border-radius: 2px;
@@ -113,3 +117,5 @@
     position: absolute;
     bottom: -31px;
 }
+}
+

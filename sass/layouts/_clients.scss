@@ -23,23 +23,18 @@
     transition-property: fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    .clients-link:hover &{
+    fill: #2196F3;
+}
+.clients-link:focus &{
+    fill: #2196F3;
+}
 }
 
 .clients-link{
     transition-property: border;
     transition-duration:  250ms;
     transition-timing-function:   cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.clients-link:hover{
-    border: 1px solid #2196F3;
-}
-
-.clients-link:hover .client-logo{
-    fill: #2196F3;
-}
-
-.clients-link{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -47,12 +42,14 @@
     height: 92px;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
-}
-
-.clients-link:focus{
+    &:hover{
     border: 1px solid #2196F3;
 }
-
-.clients-link:focus .client-logo{
-    fill: #2196F3;
+&:focus{
+    border: 1px solid #2196F3;
 }
+}
+
+
+
+
