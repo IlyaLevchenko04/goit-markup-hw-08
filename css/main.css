@@ -12,6 +12,11 @@ body {
   padding: 94px 0;
 }
 
+@media (max-width: 480) {
+  .section {
+    width: 100vw;
+  }
+}
 img {
   display: block;
   max-width: 100%;
@@ -58,6 +63,10 @@ p,
 ul {
   margin: 0;
   padding: 0;
+}
+
+.none {
+  display: none;
 }
 
 .header {
