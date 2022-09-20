@@ -4,6 +4,13 @@
   padding: 0 15px;
 }
 
+@media screen and (max-width: 480px) {
+  .container {
+    margin: 0 15px;
+    padding: 0;
+    width: 450px;
+  }
+}
 body {
   font-family: "Roboto", sans-serif;
 }
@@ -14,7 +21,7 @@ body {
 
 @media (max-width: 480) {
   .section {
-    width: 100vw;
+    padding: 0;
   }
 }
 img {
@@ -254,6 +261,33 @@ ul {
   background-color: #188CE8;
 }
 
+@media screen and (max-width: 480px) {
+  .hero {
+    background: #2F303A;
+    text-align: center;
+    padding: 118px 60px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hearofoto.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hearofoto.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 480px;
+    margin: 0 auto;
+  }
+  .hero-title {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.62;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #fff;
+    width: 360px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 .advantages-item-title {
   font-size: 14px;
   line-height: 1.33;
@@ -302,6 +336,45 @@ ul {
           align-items: center;
 }
 
+@media screen and (max-width: 480px) {
+  .advantages-item {
+    min-width: 450px;
+  }
+  .advantages-photo-container {
+    width: 450px;
+    height: 120px;
+    background-color: #F5F4FA;
+    margin-bottom: 30px;
+    border-radius: 4px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .advantages-item-title {
+    font-size: 14px;
+    line-height: 1.33;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  .advantages-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 30px;
+  }
+}
 .photo-title {
   font-size: 36px;
   line-height: 1.16;
@@ -357,6 +430,11 @@ ul {
           align-items: center;
 }
 
+@media screen and (max-width: 480px) {
+  .photo-section {
+    display: none;
+  }
+}
 .team {
   background-color: #F5F4FA;
 }
@@ -478,6 +556,21 @@ ul {
   background-color: #2196F3;
 }
 
+@media screen and (max-width: 480px) {
+  .team-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 30px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .team-photo {
+    width: 450px;
+  }
+}
 .clients-title {
   text-align: center;
   font-weight: 700;
@@ -543,6 +636,41 @@ ul {
   border: 1px solid #2196F3;
 }
 
+@media screen and (max-width: 480px) {
+  .clients-item {
+    width: 210px;
+    height: 92px;
+  }
+  .clients-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 30px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .clients-link {
+    -webkit-transition-property: border;
+    transition-property: border;
+    -webkit-transition-duration: 250ms;
+            transition-duration: 250ms;
+    -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 210px;
+    height: 92px;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+  }
+}
 .footer {
   background: #2F303A;
   min-height: 252px;
@@ -748,6 +876,20 @@ address {
   fill: #fff;
 }
 
+@media screen and (max-width: 480px) {
+  .footer-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
 .mod-window {
   width: 528px;
   height: 581px;

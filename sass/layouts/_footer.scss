@@ -182,3 +182,10 @@ address{
     fill: #fff;
 }
 
+@media screen and (max-width:480px) {
+    .footer-container{
+        display: flex;
+        align-items: baseline;
+        flex-direction: column;
+    }
+}
