@@ -1,4 +1,4 @@
-.header{
+/*.header{
     border-bottom: 1px solid #ECECEC;
 }
 
@@ -98,7 +98,10 @@
 }
 }
 
-
+.mobile-menu, .mobile-soc-item, .mobile-nav-list, .mobile-nav-item, .mobile-contact-list, .mobile-contact-item, .mobile-soc-list {
+    display: none;
+}
+ 
 
 
 
@@ -117,5 +120,88 @@
     position: absolute;
     bottom: -31px;
 }
+}*/
+
+
+@media screen and (max-width: 480px){
+    .mobile-menu {
+        padding: 48px 40px; 
+        position: relative;
+    }
+    .menu-close-btn{
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        border: none;
+        background-color: transparent;
+        transition-property: fill;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        &:active{
+            fill: #2196F3;
+         }
+    }
+    .mobile-nav-list {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        align-items: flex-start;
+        margin-bottom: 302px;
+    }
+    .mobile-nav-item {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 1.175;
+        text-align: center;
+        letter-spacing: 0.02em;
+        transition-property: color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        &:active{
+            color: #2196F3;
+         }
+         
+    
+    }
+    .mobile-contact-list {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        align-items: flex-start;
+        margin-bottom: 64px;
+    }
+    .mobile-contact-link {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 34px;
+        line-height: 1.176;
+        letter-spacing: 0.02em;
+        color: #757575;
+        transition-property: color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+         &:active{
+            color: #2196F3;
+         }
+    }
+    .mobile-soc-list {
+        display: flex;
+    }
+    .mobile-soc-link {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 1.22;
+        letter-spacing: 0.02em;
+        padding: 0 10px;
+        color: #2196F3;
+    }
+    .mobile-soc-item:not(:last-child){
+        border-right:  1px solid rgba(33, 33, 33, 0.2);
+    }
 }
 
