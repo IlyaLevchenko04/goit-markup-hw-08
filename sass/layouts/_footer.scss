@@ -50,13 +50,14 @@ address{
 .footer-soc-item{
     border-radius: 50%;
     background-color:rgba(255, 255, 255, 0.1);
-    width: 44px;
+    width: calc((100% - 3*10px)/4);;
     height: 44px;
 }
 
 .footer-info{
     max-width: 231px;
     display: inline-block;
+    margin-right: 25px;
 }
 
 .footer-soc-list{
@@ -66,7 +67,7 @@ address{
 
 .soc-links-container{
     margin-left: 70px;
-    margin-right: 93px;
+    margin-right: 10px;
 }
 
 
@@ -111,6 +112,7 @@ address{
 .footer-container{
     display: flex;
     align-items: baseline;
+    justify-content: space-between;
 }
 
 
@@ -128,7 +130,7 @@ address{
 
 .footer-input{
     margin-right: 12px;
-    width: 358px;
+    max-width: 358px;
     height: 50px;
     background-color: transparent;
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -153,7 +155,7 @@ address{
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     color: #fff;
-    width: 200px;
+    max-width: 200px;
     height: 50px;
     display: flex;
     justify-content: center;
@@ -182,10 +184,102 @@ address{
     fill: #fff;
 }
 
+.info-soc-wrap{
+    width: calc((100% - 70px)/2);
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
 @media screen and (max-width:480px) {
     .footer-container{
-        display: flex;
-        align-items: baseline;
+        display: block;
+        text-align: center;
+    }
+    .footer-input{
+        display: block;
+        width: 100%;
+    }
+    .f-logo{
+        text-align: center;
+        margin-right: 0;
+    }
+    .footer-address{
+        text-align: center;
+    }
+    .footer-link{
+        text-align: center;
+    }
+    .footer-list{
+        display: block;
+        text-align: center;
+        margin-bottom: 60px;
+    }
+    .footer-title{
+        text-align: center;
+    }
+    .footer-soc-list{
+        justify-content: center;
+        margin-bottom: 60px;
+    }
+    .footer-form-title{
+        text-align: center;
+    }
+    .button-wrap{
+        display: block;
+        text-align: center;
+        width: 100%;
+    }
+    .footer-input{
+        margin:0;
+        max-width: 450px;
+        margin-bottom: 20px;
+    }
+    .footer-submit-btn{
+        margin: 0 auto;
+    }
+    .info-soc-wrap{
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        
+    }
+    .soc-links-container{
+        margin: 0;
+    }
+    
+}
+
+@media screen and (min-width: 481px) and (max-width:768px){
+    .footer-container{
+        display: block;
+        text-align: center;
+        padding: 60px 76px;
+    }
+    .footer-input{
+        display: block;
+        width: 450px;
+        margin-bottom: 20px;
+    }
+    .f-logo{
+        text-align: center;
+        margin-right: 0;
+    }
+    .footer-address{
+        text-align: center;
+    }
+    .info-soc-wrap{
+        width: 100%;
+        justify-content: space-between;
+        margin-bottom: 60px;
+    }
+    .soc-links-container{
+        margin: 0;
+    }
+    .button-wrap{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 }

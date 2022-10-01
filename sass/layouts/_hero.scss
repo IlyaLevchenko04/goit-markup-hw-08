@@ -49,15 +49,8 @@
 @media screen and (max-width: 480px) {
     
         .hero{
-            background: #2F303A;
-            text-align: center;
-            padding: 118px 60px;
-            background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hearofoto.jpg);
             background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            max-width: 480px;
-            margin: 0 auto;
+            padding: 118px auto;
         }
         .hero-title{
             font-family: 'Roboto';
@@ -69,11 +62,30 @@
             letter-spacing: 0.06em;
             text-transform: uppercase;
             color: #fff;
-            width: 360px;
+            max-width: 360px;
             margin-bottom: 30px;
             
-            margin-left: auto;
-            margin-right: auto;
         }
    
+}
+
+@media screen and (min-width: 481px) and (max-width:768px){
+    .hero{
+        background-position: center;
+        padding: 118px auto;
+    }
+    .hero-container{
+        text-align: center;
+    }
+    .hero-title{
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 900;
+        font-size: 26px;
+        line-height: 1.62;
+        text-align: center;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        max-width: 360px;
+    }
 }
