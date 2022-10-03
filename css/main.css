@@ -1469,6 +1469,10 @@ address {
           box-shadow: 0 3px 2px 0 rgba(47, 48, 58, 0.4);
 }
 
+.portfolio__item {
+  width: 370px;
+}
+
 .portfolio__item-title {
   font-size: 18px;
   line-height: 2;
@@ -1707,6 +1711,15 @@ address {
   }
   .gray-link {
     color: #757575;
+  }
+  .studio-link {
+    color: var(--main-color-text);
+  }
+  .mobile-menu__link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.33;
+    letter-spacing: 0.02em;
   }
 }
 @media screen and (min-width: 768px) {
