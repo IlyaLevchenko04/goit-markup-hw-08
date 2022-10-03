@@ -1,6 +1,5 @@
 .mod-window{
     width: 528px;
-    height: 581px;
     background-color: #fff;
     position: absolute;
     top: 50%;
@@ -68,6 +67,10 @@
         &:focus{
             outline-color: #2196F3;
         }
+        }
+
+        .no-scroll{
+            overflow: hidden;
         }
     
         
@@ -222,4 +225,16 @@
             transition-property:  fill ;
             transition-duration: 250ms;
             transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        @media screen and (max-width: 480px){
+            .mod-window{
+                width: calc(100vw - 30px);
+            }
+        }
+
+        @media screen and (min-width: 480px) and (max-width: 1199px){
+            .mod-window{
+                width: 450px;
+            }
         }

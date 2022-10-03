@@ -114,4 +114,46 @@
     }
 
 
+    @media screen and (max-width: 767px){
+        .portfolio__list{
+            flex-wrap: nowrap;
+            flex-direction: column;
+        }
+        .portfolio__link{
+            width: 100%;
+        }
+        .portfolio__item{
+            width: calc(100vw - 30px);
+        }
+        .menu-list{
+            flex-wrap:wrap;
+            justify-content: start;
+        }
+        .border{
+            width: 100%;
+        }
+        .portfolio__photo{
+            width: 100%;
+        }
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1199px){
+        .portfolio__item{
+            width: calc((100% - 30px)/2);
+        }
+        .border{
+            width: 100%;
+        }
+        .portfolio__photo{
+            width: 100%;
+        }
+        .portfolio__link{
+            width: 100%;
+        }
+        .portfolio__list{
+            flex-wrap: wrap;
+            flex-direction: row;
+        }
+    }
     
+   

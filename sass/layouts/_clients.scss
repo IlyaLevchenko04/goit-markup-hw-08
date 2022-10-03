@@ -50,6 +50,32 @@
 }
 }
 
+@media screen and (max-width: 480px){
+    .clients-list{
+        flex-wrap: wrap;
+    }
+    .clients-item{
+        width: calc((100% - 30px)/2);
+    }
+    .clients-link{
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 480px) and (max-width: 1199px){
+    .clients-list{
+        flex-wrap: wrap;
+    }
+    .clients-item{
+        width: calc((100% - 60px)/3);
+    }
+    .clients-link{
+        width: 100%;
+    }
+}
+
+
+
 
 
 

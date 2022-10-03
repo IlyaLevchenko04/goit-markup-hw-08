@@ -29,6 +29,12 @@ address{
 .f-logo{
     margin-bottom: 20px;
     display: block;
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: #2196F3;
 }
 
 .footer-list{
@@ -38,6 +44,10 @@ address{
 
 .margin{
     margin-bottom: 9px;
+}
+
+.info-soc-wrap{
+    display: flex;
 }
 
 .footer-soc{
@@ -127,7 +137,6 @@ address{
 }
 
 .footer-input{
-    margin-right: 12px;
     width: 358px;
     height: 50px;
     background-color: transparent;
@@ -172,6 +181,7 @@ address{
 
 .button-wrap{
     display: flex;
+    gap: 12px;
 }
 
 .footer-submit-text{
@@ -182,3 +192,89 @@ address{
     fill: #fff;
 }
 
+
+@media screen and (max-width: 767px){
+    .footer-container{
+        flex-direction: column;
+        align-items: center;
+        gap: 60px;
+    }
+    .footer-info{
+        text-align: center;
+    }
+    .soc-links-container{
+        text-align: center;
+        margin: 0;
+    }
+    .footer-input{
+        width: 100%;
+        max-width: 450px;
+    }
+    .button-wrap{
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .footer-form{
+        width: 100%;
+        text-align: center;
+    }
+
+    .info-soc-wrap{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 60px;
+    }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px){
+    .soc-links-container{
+        margin:0;
+    }
+    .footer-info{
+        margin-bottom: 60px;
+        text-align: center;
+    }
+    .f-logo{
+        text-align: center;
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 1.16;
+        letter-spacing: 0.03em;
+    }
+    .footer-container{
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .footer-form{
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+}
+.button-wrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.footer-form{
+    display: block;
+}
+.footer-input{
+    width: 450px;
+    margin-bottom: 20px;
+}
+.info-soc-wrap{
+    display: flex;
+    gap: 165px;
+    margin: auto;
+}
+   
+}

@@ -12,7 +12,7 @@
     <title>Document</title>
 </head>
 <body>
-    <header class="header">
+    <header class="header ">
         <div class="header-container container">
             <a href="./index.html" class="link logo">Web<span class="header__studio">Studio</span></a>
             <nav class="nav">
@@ -26,10 +26,35 @@
                 <li><a href="mailto:info@devstudio.com" class="link nav__link tel"><svg width="16px" height="12px"class="mail"><use href="./images/symbol-defs.svg#icon-mail"></use></svg>info@devstudio.com</a></li>
                 <li><a href="tel:+380961111111" class="link nav__link tel"><svg width="10px" height="16px"class="phone"><use href="./images/symbol-defs.svg#icon-smartphone" ></use></svg>+38 096 111 11 11</a></li>
             </ul>
+
+
+            <button class="mobile-menu-button " data-menu-open><svg width="24px" height="16px" class="mobile-menu-icon"><use href="./images/symbol-defs.svg#icon-mob-menu"></use></svg></button>
         </div>
+        <div class="mobile-menu is-hidden" data-menu>
+            <button class="menu-close-btn" data-menu-close><svg width="18px" height="18px"><use href="./images/symbol-defs.svg#icon-closeBtn-1"></use></svg></button>
+            <div class="menu-wrap">
+                <ul class="mobile-nav-list list">
+                    <li class="mobile-nav-item">Студія</li>
+                    <li class="mobile-nav-item"><a href="./portfolio.html" class="link nav__link mobile-nav-item">Портфоліо</a></li>
+                    <li class="mobile-nav-item">Контакти</li>
+                </ul>
+                <ul class="mobile-contact-list list">
+                    <li class="mobile-contact-item blue-number"><a href="tel:+380961111111" class="link mobile-contact-link blue-link">+38 096 111 11 11</a></li>
+                    <li class="mobile-contact-item gray-mail"><a href="mailto:info@devstudio.com" class="link mobile-contact-link gray-link">info@devstudio.com</a></li>
+                </ul>
+                <ul class="mobile-soc-list list">
+                    <li class="mobile-soc-item"><a href="/" class="mobile-soc-link link">Instagram</a></li>
+                    <li class="mobile-soc-item"><a href="/" class="mobile-soc-link link">Twitter</a></li>
+                    <li class="mobile-soc-item"><a href="/" class="mobile-soc-link link">Facebook</a></li>
+                    <li class="mobile-soc-item last-child"><a href="/" class="mobile-soc-link link">LinkedIn</a></li>
+                </ul>
+            </div>
+        </div>
+
+        
     </header>
 <main>
-    <section class="hero">
+    <section class="hero ">
         <div class="hero-container container">
             <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
             <button type="button" class="hero-button" data-modal-open>Заказать услугу</button>
@@ -37,7 +62,7 @@
     </section>
 
     
-    <section class="section">
+    <section class="section ">
         <div class="container">
             <h2 class="visually-hidden">Преимущества</h2>
             <ul class="list advantages-list">
@@ -65,25 +90,25 @@
         </div>
     </section>
 
-    <section class="section photo-section">
+    <section class="section photo-section ">
         <div class="photo-container container">
         <h2 class="photo-title">Чем мы занимаемся</h2>
         <ul class="list photo-list">
             <li class="photo-item">
-                
-                    <img src="./images/img.jpg" alt="Прогресивное оборудование" width="370px" class="photo">
+                <img  src="./images/img.jpg" srcset="./images/img.jpg 1x, ./images/desktop-app-2x.jpg 2x" sizes="370px" alt="Прогресивное оборудование" width="370px" class="photo"/>
                     <div class="photo-text-container"><span class="photo-text">Десктопні додатки</span>
                 </div>
             </li>
             <li class="photo-item">
                 
-                    <img src="./images/img(1).jpg" alt="Мультиплатформность" width="370px" class="photo">
+                    <img src="./images/img(1).jpg" srcset="./images/img(1).jpg 1x, ./images/mobile-app-2x.jpg 2x " sizes="370px" alt="Мультиплатформность" width="370px" class="photo">
                     <div class="photo-text-container"><span class="photo-text">Мобільні додатки</span>
                 </div>
             </li>
             <li class="photo-item">
                 
-                    <img src="./images/img(2).jpg" alt="Цветокорекция" width="370px" class="photo">
+                    <img src="./images/img(2).jpg" srcset="./images/img(2).jpg 1x, ./images/design-app-2x.jpg 2x "
+                    alt="Цветокорекция" width="370px" sizes="370px" class="photo">
                     <div class="photo-text-container"><span class="photo-text">Дизайнерські рішення</span>
                 </div>
             </li>
@@ -91,12 +116,12 @@
     </div>
     </section>
 
-    <section class="section team">
+    <section class="section team  ">
         <div class="team-container container">
         <h2 class="team-title">Наша команда</h2>
         <ul class="list team-list">
             <li class="team-item">
-                <img src="./images/igor.jpg" alt="Igor Demyanenko Product Designer" width="270" class="team-photo">
+                <img src="./images/Ihor-mob-1x.jpg" srcset="./images/Ihor-desktop-1x.jpg 270w, ./images/Ihor-desktop-2x 540w, ./images/Ihor-mob-1x.jpg 450w, ./images/Ihor-mob-2x.jpg 900w, ./images/Ihor-tabl-1x.jpg 354w, ./images/Ihor-tabl-2x.jpg 708w" sizes="(min-width: 1200px) 22.5vw, (min-width:768px) 46.09vw, (min-width:480) 93.75vw" alt="Igor Demyanenko Product Designer"  class="team-photo">
                 <div class="person">
                 <h3 class="team-item-title">Игорь Демьяненко</h3>
                 <p class="team-item-text">Product Designer</p>
@@ -109,7 +134,7 @@
             </div>
             </li>
             <li class="team-item">
-                <img src="./images/olya.jpg" alt="Olya Repina Frontend developer" width="270" class="team-photo">
+                <img src="./images/olya.jpg" alt="Olya Repina Frontend developer"  class="team-photo">
                 <div class="person">
                 <h3 class="team-item-title">Ольга Репина</h3>
                 <p class="team-item-text">Frontend developer</p>
@@ -122,7 +147,7 @@
                 </div>
             </li>
             <li class="team-item">
-                <img src="./images/kolya.jpg" alt="Kolya Tarasov Marketing" width="270" class="team-photo">
+                <img src="./images/kolya.jpg" alt="Kolya Tarasov Marketing"  class="team-photo">
                 <div class="person">
                 <h3 class="team-item-title">Николай Тарасов</h3>
                 <p class="team-item-text">Marketing</p>
@@ -135,7 +160,7 @@
             </div>
             </li>
             <li class="team-item">
-                <img src="./images/misha.jpg" alt="Mykhailo Ermakov UI Designer " width="270" class="team-photo">
+                <img src="./images/misha.jpg" alt="Mykhailo Ermakov UI Designer "  class="team-photo">
                 <div class="person">
                 <h3 class="team-item-title">Михаил Ермаков</h3>
                 <p class="team-item-text">UI Designer</p>
@@ -151,7 +176,7 @@
         </ul>
     </div>
     </section>
-    <section class="section">
+    <section class="section ">
         <div class="clients-container container">
             <h2 class="clients-title">Постійні клієнти</h2>
                 <ul class=" clients-list list">
@@ -167,10 +192,11 @@
     </section>
 </main>
 
-    <footer class="footer">
-      <div class="container footer-container">  
+    <footer class="footer ">
+      <div class="container footer-container"> 
+        <div class="info-soc-wrap">
         <div class="footer-info">
-            <a href="/" class="link logo f-logo">Web<span class="footer__logo">Studio</span></a>
+            <a href="/" class="link  f-logo">Web<span class="footer__logo">Studio</span></a>
             <address>
                 <ul class="list footer-list">
                     <li class="margin"><a href="https://goo.gl/maps/VHEoFnf3WSMkD6YW6" class="link footer-address"> г. Киев, пр-т Леси Украинки, 26</a></li>
@@ -188,6 +214,7 @@
                 <li class="footer-soc-item"><a href="" class="link footer-soc-link"><svg width="106px" height="60px"class="footer-soc"><use href="./images/symbol-defs.svg#icon-linkedin1" ></use></svg></a></li>
             </ul>
        </div>
+    </div>
        <div class="footer-form">
         <form>
             <h2 class="footer-form-title">Підпишіться на розсилку</h2>
@@ -236,6 +263,7 @@
         </div>
 
         <script src="./js/modal.js"></script>
+        <script src="./js/mobile-menu-js.js"></script>
 
 </body>
 </html>

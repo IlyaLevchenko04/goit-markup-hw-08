@@ -98,6 +98,25 @@
   }
   }
 
+
+  @media screen and (max-width: 480px){
+    .team-list{
+      flex-direction: column;
+    }
+    .team-item{
+    width: calc(100vw - 30px);
+   }
+  }
+
+  @media screen and (min-width: 481px) and (max-width: 1199px){
+    .team-list{
+      flex-wrap: wrap;
+    }
+    .team-item{
+    width: calc((100% - 30px)/2);
+   }
+}
+
   
 
   
